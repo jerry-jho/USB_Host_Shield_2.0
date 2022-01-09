@@ -92,7 +92,7 @@ public:
 };
 
 /* SPI pin definitions. see avrpins.h   */
-#if defined(PIN_SPI_SCK) && defined(PIN_SPI_MOSI) && defined(PIN_SPI_MISO) && defined(PIN_SPI_SS)
+#if 0 //defined(PIN_SPI_SCK) && defined(PIN_SPI_MOSI) && defined(PIN_SPI_MISO) && defined(PIN_SPI_SS)
 // Use pin defines: https://github.com/arduino/Arduino/pull/4814
 // Based on: https://www.mikeash.com/pyblog/friday-qa-2015-03-20-preprocessor-abuse-and-optional-parentheses.html
 #define NOTHING_EXTRACT
@@ -119,7 +119,8 @@ typedef SPi< P16, P18, P17, P10 > spi;
 #elif defined(ESP8266)
 typedef SPi< P14, P13, P12, P15 > spi;
 #elif defined(ESP32)
-typedef SPi< P18, P23, P19, P5 > spi;
+//typedef SPi< P18, P23, P19, P5 > spi;
+typedef SPi< P18, P23, P19, P13 > spi;
 #elif defined(ARDUINO_NRF52840_FEATHER)
 typedef SPi< P26, P25, P24, P5 > spi;
 #else
