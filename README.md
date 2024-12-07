@@ -4,7 +4,8 @@ The code is released under the GNU General Public License.
 
 此代码来自 https://github.com/felis/USB_Host_Shield_2.0
 
-硬件连接
+
+硬件连接在默认ESP32基础上有修改，请全局启用宏 ESP32_MHET 以启用下面的连接
 
   1. SS -> IO13
   2. SINT -> IO35
