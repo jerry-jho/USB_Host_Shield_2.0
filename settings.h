@@ -39,7 +39,7 @@ e-mail   :  support@circuitsathome.com
 ////////////////////////////////////////////////////////////////////////////////
 
 /* Set this to 1 to activate serial debugging */
-#define ENABLE_UHS_DEBUGGING 1
+#define ENABLE_UHS_DEBUGGING 0
 
 /* This can be used to select which serial port to use for debugging if
  * multiple serial ports are available.
@@ -173,6 +173,7 @@ e-mail   :  support@circuitsathome.com
 #ifdef STM32F4
 #include "stm32f4xx_hal.h"
 extern SPI_HandleTypeDef SPI_Handle; // Needed to be declared in your main.cpp
+#define MFK_CASTUINT8T (uint8_t)
 #endif
 
 // Fix defines on Arduino Due
